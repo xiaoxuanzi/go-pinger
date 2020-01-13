@@ -68,3 +68,5 @@ Via http://localhost:8888/pinger/json
     }
 }
 ```
+### License
+MIT
