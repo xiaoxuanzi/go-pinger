@@ -26,3 +26,5 @@ Usage:
 ```
 * result
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-example-1.gif"  width="60%"  height="60%"/>
+
+<img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-web.png"  width="60%"  height="60%"/>
