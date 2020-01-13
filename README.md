@@ -18,21 +18,20 @@ Usage:
 ```
 
 ### Example
-#### using web
+#### 1. Using web
 <code>
 $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79" -web
 </code>
 <br>
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-web.png" />
 
-#### command-line interface (CLI) 
+#### 2. Command-line interface (CLI) 
 <code>
 $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79"
 </code>
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-example-1.gif"/>
 
-#### using hostfile
-> Import host from file
+#### 3. Import host from file
 <code>
 $./go-pinger -hostfile hostfile.txt  -web
 </code>
