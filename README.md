@@ -17,14 +17,21 @@ Usage:
   -web
     	enable webserver
 ```
-#### example
-
+#### Example
+##### using web
+```
+$./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79" -web
+```
+<img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-web.png" />
 ##### command-line interface (CLI) 
-* command：
 ```
-./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79"
+$./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79"
 ```
-* result
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-example-1.gif"/>
 
-<img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-web.png" />
+##### using hostfile
+> Import host from file
+
+```
+$./go-pinger -hostfile hostfile.txt  -web
+```
