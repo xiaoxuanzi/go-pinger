@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="5">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Pinger Result Table</h2>
+  <p> The unit is millisecond. <br>
+  This page will refresh after 5 seconds.<br>
+  If you find the value is -1 mean that this IP address or host isn't reachable,
+  and this line will appear in red to get your attention.
+  </p>            
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Host</th>
+        <th>Max</th>
+        <th>Min</th>
+       	<th>Avg</th>
+        <th>Ploss</th>
+      </tr>
+    </thead>
+    <tbody>
+		{{ range $host, $stat := .hostStat }}
+		{{ if eq $stat.Avg -1 }}
+			<tr class="table-danger">
+		{{ else }}
+			<tr class="table-success">
+		{{ end }}
+				<td>{{ $host }}</td>
+				<td>{{ $stat.Max }}</td>
+				<td>{{ $stat.Min }}</td>
+				<td>{{ $stat.Avg }}</td>
+				<td>{{ $stat.Ploss }}</td>
+			</tr>
+		{{ end }}
+
+    </tbody>
+  </table>
+</div>
+
+<script>
+	//setTimeout(
+	//	function(){
+	//		location.reload()
+	//	},
+	//	5000);
+</script>
+</body>
+</html>

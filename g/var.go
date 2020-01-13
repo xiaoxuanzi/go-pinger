@@ -103,9 +103,9 @@ func (this *SafeHistoryRttMap) PushFrontAndMaintain(k string, v int64){
 
 type PingStats struct{
 	Max int64 `json:"max"`
-	Min int64 `json:min`
-	Avg int64 `json:avg`
-	Ploss string `json:ploss`
+	Min int64 `json:"min"`
+	Avg int64 `json:""avg"`
+	Ploss string `json:"ploss"`
 }
 
 type SafeLinkedList struct {
