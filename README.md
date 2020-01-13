@@ -19,6 +19,8 @@ Usage:
 
 ### Example
 #### 1. Using web
+The web GUI is by default available via http://localhost:8888/pinger/web
+Use -port to use another port.
 <code>
 $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79" -web
 </code>
@@ -35,3 +37,34 @@ $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79"
 <code>
 $./go-pinger -hostfile hostfile.txt  -web
 </code>
+
+#### 4. Get result in json format
+Via http://localhost:8888/pinger/json
+```
+{
+    "39.156.69.79":{
+        "max":4,
+        "min":4,
+        "Avg":4,
+        "ploss":"0.00%"
+    },
+    "github.com":{
+        "max":-1,
+        "min":-1,
+        "Avg":-1,
+        "ploss":"100.00%"
+    },
+    "slashdot.org":{
+        "max":205,
+        "min":205,
+        "Avg":205,
+        "ploss":"0.00%"
+    },
+    "www.linkedin.com":{
+        "max":22,
+        "min":21,
+        "Avg":21,
+        "ploss":"0.00%"
+    }
+}
+```
