@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/xiaoxianzi/go-pinger/g"
-	"github.com/xiaoxianzi/gin-gonic/gin"
+	"github.com/xiaoxuanzi/go-pinger/g"
+	"github.com/xiaoxuanzi/gin-gonic/gin"
 )
 
 func pingerHostStats() map[string]g.PingStats{

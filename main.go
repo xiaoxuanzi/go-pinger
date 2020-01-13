@@ -6,9 +6,9 @@ import (
 	"flag"
 	"os/signal"
 
-	"github.com/xiaoxianzi/go-pinger/g"
-	"github.com/xiaoxianzi/go-pinger/pinger"
-	"github.com/xiaoxianzi/go-pinger/http"
+	"github.com/xiaoxuanzi/go-pinger/g"
+	"github.com/xiaoxuanzi/go-pinger/pinger"
+	"github.com/xiaoxuanzi/go-pinger/http"
 )
 
 func main() {
