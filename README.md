@@ -3,7 +3,7 @@
 This's a Simple tool to ping multiple hosts at once, provide command-line interface (CLI) and web-based overview, inspired by [gomphs](https://github.com/42wim/gomphs)
 
 ### Usage 
-<code>
+```
 # ./go-pinger
 Usage: 
   -h	help
@@ -15,7 +15,7 @@ Usage:
     	web listen port(default 8888) (default 8888)
   -web
     	enable webserver
-</code>
+```
 
 ### Example
 #### using web
