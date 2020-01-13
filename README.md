@@ -1,7 +1,10 @@
 ## go-pinger
 
 This's a Simple tool to ping multiple hosts at once, provide command-line interface (CLI) and web-based overview, inspired by [gomphs](https://github.com/42wim/gomphs)
-
+### Installation
+```
+go get github.com/xiaoxuanzi/go-pinger
+```
 ### Usage 
 ```
 # ./go-pinger
