@@ -7,8 +7,8 @@ import (
 	"time"
 	"os"
 
-	"github.com/xiaoxuanzi/fatih/color"
-	"github.com/xiaoxuanzi/tatsushid/go-fastping"
+	"github.com/fatih/color"
+	"github.com/tatsushid/go-fastping"
 	"github.com/xiaoxuanzi/go-pinger/g"
 )
 
