@@ -22,7 +22,7 @@ Usage:
 <code>
 $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79" -web
 </code>
-<br>
+<br><br>
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-web.png" />
 
 #### 2. Command-line interface (CLI) 
