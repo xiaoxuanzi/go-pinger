@@ -7,9 +7,9 @@ import (
 	"time"
 	"os"
 
-	"github.com/fatih/color"
-	"github.com/tatsushid/go-fastping"
-	"github.com/go-pinger/g"
+	"github.com/xiaoxianzi/fatih/color"
+	"github.com/xiaoxianzi/tatsushid/go-fastping"
+	"github.com/xiaoxianzi/go-pinger/g"
 )
 
 var (
