@@ -25,4 +25,4 @@ Usage:
 ./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79"
 ```
 * result
-<img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-example-1.gif"  width="60%"  hight="60%"/>
+<img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-example-1.gif"  width="60%"  height="60%"/>
