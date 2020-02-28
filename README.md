@@ -1,11 +1,11 @@
 # go-pinger
 
 This's a Simple tool to ping multiple hosts at once, provide command-line interface (CLI) and web-based overview, inspired by [gomphs](https://github.com/42wim/gomphs)
-### Installation
+## Installation
 ```
 go get github.com/xiaoxuanzi/go-pinger
 ```
-### Usage 
+## Usage 
 ```
 # go build
 # ./go-pinger
@@ -21,8 +21,8 @@ Usage:
     	enable webserver
 ```
 
-### Example
-#### 1. Using web
+## Example
+### 1. Using web
 The web GUI is by default available via http://localhost:8888/pinger/web
 Use -port to use another port.
 <code>
@@ -31,7 +31,7 @@ $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79" -web
 <br><br>
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-web.png" />
 
-#### 2. Command-line interface (CLI) 
+### 2. Command-line interface (CLI) 
 The symbol '!' means host isn't reachable or down.
 
 <code>
@@ -39,12 +39,12 @@ $./go-pinger -hosts="slashdot.org www.linkedin.com github.com 39.156.69.79"
 </code>
 <img src="https://github.com/xiaoxuanzi/box/blob/master/go-pinger-example-1.gif"/>
 
-#### 3. Import host from file
+### 3. Import host from file
 <code>
 $./go-pinger -hostfile hostfile.txt  -web
 </code>
 
-#### 4. Get result in json format
+### 4. Get result in json format
 Via http://localhost:8888/pinger/json
 ```
 {
@@ -74,5 +74,5 @@ Via http://localhost:8888/pinger/json
     }
 }
 ```
-### License
+## License
 MIT
